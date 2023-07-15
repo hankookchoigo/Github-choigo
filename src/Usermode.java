@@ -7,6 +7,6 @@ public class Usermode {
         productListPrint();
     }
     public void productListPrint() {
-    
+        DataBaseLoading dataBaseLoading = new DataBaseLoading();
     }
 }
