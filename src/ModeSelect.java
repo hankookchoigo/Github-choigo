@@ -1,7 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 
 public class ModeSelect extends JFrame implements ActionListener {
     /*
@@ -18,6 +17,8 @@ public class ModeSelect extends JFrame implements ActionListener {
     public ModeSelect() {
         super("순자네 편의점");
         // 제목 설정
+        
+        setLayout(new BoxLayout(this, 10));
         
         Box labelBox = Box.createHorizontalBox();
         Box pwdBox = Box.createHorizontalBox();
@@ -38,7 +39,7 @@ public class ModeSelect extends JFrame implements ActionListener {
     
     @Override
     public void actionPerformed(ActionEvent e) {
-        Object obj = e.getSource();
+    
     }
     
     public static void main(String[] args) {
